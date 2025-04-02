@@ -1,0 +1,108 @@
+.dashboard-wrapper {
+    padding: 24px;
+    background-color: #f9fafb;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .dashboard-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 24px;
+  }
+  
+  /* CARD GRID */
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  
+  /* INDIVIDUAL CARD */
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+  
+  .card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: #111827;
+  }
+  
+  .card p {
+    font-size: 0.85rem;
+    margin-top: 4px;
+  }
+  
+  /* TREND COLORS */
+  .trend.positive {
+    color: #16a34a;
+  }
+  
+  .trend.negative {
+    color: #dc2626;
+  }
+  
+  /* ICON COLORS */
+  .card-icon {
+    font-size: 1.3rem;
+  }
+  
+  .card-icon.approved {
+    color: #3b82f6;
+  }
+  
+  .card-icon.pending {
+    color: #f59e0b;
+  }
+  
+  .card-icon.rate {
+    color: #10b981;
+  }
+  
+  .card-icon.time {
+    color: #8b5cf6;
+  }
+  
+  /* CHART BOXES */
+  .dashboard-graphs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 24px;
+  }
+  
+  .graph-box {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  .graph-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1f2937;
+  }
+  

@@ -1,0 +1,185 @@
+.verification-wrapper {
+    background-color: #f9fafb;
+    min-height: 100vh;
+    padding: 24px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .verification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .verification-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .bulk-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bulk-actions .approve-btn,
+  .bulk-actions .reject-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .bulk-actions .approve-btn {
+    background-color: #1d4ed8;
+    color: white;
+  }
+  
+  .bulk-actions .reject-btn {
+    background-color: #dc2626;
+    color: white;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .filters select,
+  .filters input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 0.9rem;
+    background: white;
+  }
+  
+  .verification-table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .verification-table th,
+  .verification-table td {
+    text-align: left;
+    padding: 16px;
+    font-size: 0.9rem;
+    border-top: 1px solid #f3f4f6;
+    vertical-align: middle;
+  }
+  
+  .verification-table th {
+    background-color: #f9fafb;
+    font-weight: 600;
+    color: #4b5563;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .user-info .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+  
+  .user-info .name {
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .user-info .email {
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  
+  .status {
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+  
+  .status.Pending {
+    background-color: #fef9c3;
+    color: #92400e;
+  }
+  
+  .status.Approved {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .status.Rejected {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  .doc-icon {
+    color: #4f46e5;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .approve-icon,
+  .reject-icon {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 8px;
+  }
+  
+  .approve-icon {
+    color: #16a34a;
+  }
+  
+  .reject-icon {
+    color: #dc2626;
+  }
+  
+  .pagination {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
+  .pages {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .page-btn {
+    background-color: white;
+    border: 1px solid #d1d5db;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  
+  .page-btn.active {
+    background-color: #1d4ed8;
+    color: white;
+    border-color: #1d4ed8;
+  }
+  
